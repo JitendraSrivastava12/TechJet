@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css" />
+    <script
+      src="https://kit.fontawesome.com/4737fd11e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showLaundry() {
+            document.getElementById("image-display").style.display = "none";
+            document.getElementById("vendorsContainer").style.display = "block";
+            document.getElementById("local").innerHTML="LocalBizhub Laundary";
+            document.getElementById("searchInput").placeholder="search for laundary"
+        }
+
+        function showvendors() {
+            document.getElementById("image-display").style.display = "block";
+            document.getElementById("vendorsContainer").style.display = "none";
+            document.getElementById("local").innerHTML="LocalBizhub vendors";
+            document.getElementById("searchInput").placeholder="search for vendors"
+        }
+        function newdoc2() {
+            window.location.assign("index4.html");
+          }
+          function showcart(){
+            document.getElementById("image-display").style.display = "none";
+            document.getElementById("vendorsContainer").style.display = "none";
+            document.getElementById("foo").style.display="none";
+            document.getElementById("cart").innerHTML="No orders are placed";
+            document.getElementById("local").innerHTML="LocalBizhub carts";
+            document.getElementById("searchInput").placeholder="search for carts"
+          }
+          function showHome(){
+            window.location.assign("home.html");
+          }
+    </script>
+    <style>
+        *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.container{
+  margin:1vw 2vw;  
+}
+.top{
+    background-color:#E8EFCF;
+    /* background-image: linear-gradient(135deg, #abb9cd 0%, #c3cfe2 100%); */
+    
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    
+}
+.location{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.locationcontent{
+    margin-left: 16px;
+}
+#cart{
+  font-size: 100px;
+  text-align: center;
+  margin-top: 30px;
+  color:rgb(20, 20, 209);
+}
+#searchInput{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+.header2{
+    margin-top: 20px;
+    background-image: url("./byteverseimage/yellowphoto.jpeg");
+    height: 100px;
+    
+    
+}
+.header2-content{
+    display: flex;
+     justify-content: center;
+    padding-top: 30px;
+    
+}
+.navbar{
+    
+    margin:0 -2vw;
+    /* background-color: #a1a18c; */
+    background-color:#DBA979;
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    height:60px;
+}
+.navbar ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    padding:20px 2vw;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: x-large;
+
+}
+.navbar ul li a:hover{
+    background-color: rgb(224, 205, 181);
+}
+#image-display{
+    margin-top: 20px;
+    background-color: #F7EEDD;
+    
+    /* margin-left: 15px; */
+}
+.img{
+    height:130px;
+}
+.imageb{
+    display: flex;
+    justify-content: space-between;
+}
+.imageb p{
+    text-align: center;
+    flex-wrap: wrap;
+}
+.header3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container{
+    
+    margin-top: 40px;
+}
+.headerimg{
+ height:20px;
+}
+.card-img{
+    width:30vw;
+    height: 260px;
+}
+.header{
+    display: flex;
+    
+}
+.rating{
+    margin-left: 190px;
+}
+.time{
+    margin-left: 130px;
+}
+.content{
+    width:30vw;
+    line-height:30px;
+    box-shadow: 2px 2px rgb(225, 205, 205);
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#vendorsContainer{
+    margin-top: 40px;
+    
+    
+}
+.vendcontainer{
+    display:flex;
+
+     justify-content: space-between; 
+}
+.wash{
+    margin-bottom: 20px;
+}
+.prize{
+    margin-top: 30px;
+    
+}
+.container1{
+    display: flex;
+    flex-basis: 50%;
+    background-color: #EEE4B1;
+    line-height: 30px;
+}
+.mycontainer{
+    margin-top: 20px;
+    display:flex;
+    flex-basis: 50%;
+    box-shadow: 2px 2px #E8EFCF;
+    
+}
+.washimg{
+    width:16vw;
+    height:300px
+    
+
+}
+.washman{
+    margin-top: 20px;
+}
+.details{
+    margin-left: 30px;
+}
+.container2{
+    margin-left: 100px;
+}
+.para{
+    margin-top: 20px;
+}
+.subcontainer2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.cost{
+    margin-left: 80px;
+}
+.items ul{
+    list-style: none;
+    line-height: 30px;
+}
+.cost ul{
+    list-style: none;
+    line-height: 30px;
+}
+.footer{
+    display:flex;
+    margin-top: 20px;
+    
+}
+.form{
+    padding:40px;
+    flex-basis: 60%;
+    background-color: #DAC0A3;
+    
+}
+.styler{
+    width:60%;
+    height:30px;
+    border-radius: 35px;
+}
+input[type="text"]{
+    padding:20px;
+}
+.service{
+    margin-top: 15px;
+}
+.yuvi{
+    margin-top: 34px;
+}
+.book{
+    width:200px;
+    height:34px;
+    background-color: rgb(237, 78, 19);
+    border-radius: 34px;
+    margin-left: 80px;
+}
+.footimg{
+    height:300px;
+    margin-left: 80px;
+    /* margin-top: 200px;
+    margin-left: 100px; */
+}
+.footimagecontent{
+    text-align: center;
+}
+.yuvi2{
+    width:300px;
+    margin-left: 100px;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-content">
+        <div class="header">
+          <h2 id="local">LocalBizHub Vendors</h2>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="location">
+        <div class="locationicons">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div class="locationcontent">
+          <p>NIT Patna, Patna-800005</p>
+        </div>
+      </div>
+      <input type="text" id="searchInput" placeholder="search" />
+      <div class="header2">
+        <div class="header2-content">
+          <h2>Welcome to India's Best Online Local Store</h2>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" onclick="showHome()">Home</a></li>
+          <li><a href="#">Mess</a></li>
+          <li><a href="#">Shops</a></li>
+          <li><a href="#" onclick="showvendors()">Vendors</a></li>
+          <li><a href="#" onclick="showLaundry()">Laundary</a></li>
+          <li><a href="#" onclick="showcart()">Cart</a></li>
+        </ul>
+      </nav>
+      <div id="image-display">
+        <div class="displayheading">
+          <h2 class="head">What's on Your mind?</h2>
+        </div>
+        <div class="imageb">
+          <div class="imag1">
+            <img src="{{ url_for('static', filename='images/exoticFruits.png') }}"alt="reload" class="img" />
+            <p>Exotic Fruits</p>
+          </div>
+          <div class="imag2">
+            <img src="{{ url_for('static', filename='images/fruits.png') }} "alt="reload" class="img" />
+            <p>Fruits</p>
+          </div>
+          <div class="imag3">
+            <img src="{{ url_for('static', filename='images/vegies.png') }} "alt="reload" class="img" />
+            <p>Vegetables</p>
+          </div>
+          <div class="imag4">
+            <img src="{{ url_for('static', filename='images/streetfood.png') }}" alt="reload" class="img" />
+            <p>Street Food</p>
+          </div>
+          <div class="imag5">
+            <img src="{{ url_for('static', filename='images/juice.png') }} "alt="reload" class="img" />
+            <p>Juices</p>
+          </div>
+          <div class="imag6">
+            <img src="{{ url_for('static', filename='images/nonveg.png') }}" alt="reload" class="img" />
+            <p>Non veg</p>
+           </div>
+           <div class="imag6">
+            <img src= "{{ url_for('static', filename='images/tea.png') }}"alt="reload" class="img" />
+            <p>Tea</p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card1">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/fruitvendor1.jpeg') }}"alt="reload" class="card-img" />
+            </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Fruits vendor 1</h3>
+                </div>
+                 <div class="rating">
+                  <img src="{{ url_for('static', filename='images/rating.png') }}" alt="reload" class="headerimg" /> 
+                  <span style="font-size: x-large">4.2</span>
+                </div>
+              </div>
+              <span>Nit road, patna University, Patna</span
+                ><span class="time">10min</span>
+                <p>Owner-Rajesh Kumar</p>
+                <p>Contact-9102563552</p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card-image">
+              <img src="{{ url_for('static', filename='images/fruitvendor2.jpeg') }}" alt="reload" class="card-img" /> 
+              </div>
+              <div class="content">
+                <div class="header">
+                  <div class="vendorheader">
+                    <h3>Fruits vendor 2</h3>
+                  </div>
+                   <div class="rating">
+                      <img src="{{ url_for('static', filename='images/rating.png')  }}" alt="error" class="headerimg" />
+  
+                    <span style="font-size: x-large">4.1</span>
+                  </div>
+                </div>
+                <span>Nit road, patna University, Patna</span
+                  ><span class="time">10min</span>
+                  <p>Owner-Rajesh Kumar</p>
+                  <p>Contact-9102563552</p>
+                </div>
+              </div>
+              <div class="card3">
+                <div class="card-image">
+                   <img src="{{ url_for('static', filename='images/fruitvendor3.jpg') }}" alt="error" class="card-img" /> 
+                </div>
+                <div class="content">
+                  <div class="header">
+                    <div class="vendorheader">
+                      <h3>Fruits vendor 3</h3>
+                     </div>
+                    <div class="rating">
+                      <img src="{{ url_for('static', filename='images/rating.png') }}" alt="error" class="headerimg" /> 
+                      <span style="font-size: x-large">3.8</span>
+                    </div>
+                  </div>
+                  <span>Nit road, patna University, Patna</span
+                    ><span class="time">10min</span>
+                    <p>Owner-Rajesh Kumar</p>
+                    <p>Contact-9102563552</p>
+                  </div>
+                </div>
+                <div class="card4">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/vegvendor1.jpg') }}" alt="error" class="card-img" />
+                  </div>
+                  <div class="content">
+                    <div class="header">
+                      <div class="vendorheader">
+                        <h3>Fruits vendor 1</h3>
+                       </div>
+                      <div class="rating">
+                        <img src="{{ url_for('static', filename='images/rating.png') }}" alt="error" class="headerimg" />
+                        <span style="font-size: x-large">4.8</span>
+                      </div>
+                    </div>
+                    <span>Nit road, patna University, Patna</span
+                      ><span class="time">10min</span>
+                      <p>Owner-Rajesh Kumar</p>
+                      <p>Contact-9102563552</p>
+                    </div>
+                  </div>
+                  <div class="card5">
+                    <div class="card-image">
+                      <img src="{{ url_for('static', filename='images/vegvendor2.jpeg') }}"  alt="error" class="card-img" />
+                    </div>
+                    <div class="content">
+                      <div class="header">
+                        <div class="vendorheader">
+                          <h3>Fruits vendor 1</h3>
+            </div>
+            <div class="rating">
+              <img src="{{ url_for('static', filename='images/rating.png') }}"  alt="error" class="headerimg" /> 
+              <span style="font-size: x-large">4.6</span>
+            </div>
+          </div>
+          <span>Nit road, patna University, Patna</span
+            ><span class="time">8min</span>
+            <p>Owner-Rajesh Kumar</p>
+            <p>Contact-9102563552</p>
+          </div>
+        </div>
+        <div class="card6">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/vegvendor3.webp') }}"  alt="error" class="card-img" />
+          </div>
+          <div class="content">
+            <div class="header">
+              <div class="vendorheader">
+                <h3>Fruits vendor 1</h3>
+              </div>
+               <div class="rating">
+                <img src="{{ url_for('static', filename='images/rating.png') }}"  alt="error" class="headerimg" /> 
+                <span style="font-size: x-large">4.2</span>
+              </div>
+            </div>
+            <span>Nit road, patna University, Patna</span
+            ><span class="time">16min</span>
+            <p>Owner-Rajesh Kumar</p>
+            <p>Contact-9102563552</p>
+          </div>
+          </div>
+          <div class="card7">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/fruitvendor1.jpeg') }}"  alt="error" class="card-img" />
+            </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Fruits vendor 1</h3>
+                </div>
+                <div class="rating">
+                  <img src="{{ url_for('static', filename='images/streetfood1.jpeg') }}"  alt="error" class="headerimg" />
+                  <span style="font-size: x-large">4.6</span>
+                </div>
+              </div>
+              <span>Nit road, patna University, Patna</span
+              ><span class="time">12min</span>
+              <p>Owner-Rajesh Kumar</p>
+              <p>Contact-9102563552</p>
+            </div>
+          </div>
+          <div class="card8">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/streetfood.png') }}" alt="error" class="card-img" />
+           </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Fruits vendor 1</h3>
+                </div>
+                 <div class="rating">
+                  <img src="{{ url_for('static', filename='images/rating.png') }}"  alt="error" class="headerimg" />
+                  <span style="font-size: x-large">4.2</span>
+                </div>
+              </div>
+              <span>Nit road, patna University, Patna</span
+              ><span class="time">10min</span>
+              <p>Owner-Rajesh Kumar</p>
+              <p>Contact-9102563552</p>
+            </div>
+          </div>
+          <div class="card9">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/shops1.jpeg') }}"  alt="error" class="card-img" />
+            </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Fruits vendor 1</h3>
+                </div>
+                <div class="rating">
+                  <img src="{{ url_for('static', filename='images/rating.png') }}"  alt="error" class="headerimg" />
+                  <span style="font-size: x-large">4.2</span>
+                </div>
+              </div>
+              <span>Nit road, patna University, Patna</span
+              ><span class="time">10min</span>
+              <p>Owner-Rajesh Kumar</p>
+              <p>Contact-9102563552</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="vendorsContainer">
+        <h2 class="wash">Washermen nearby</h2>
+        <div class="vendcontainer">
+          <div class="card1">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/washerman1.jpg') }}"  alt="error" class="card-img" />
+            </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Washman 1</h3>
+                 </div>
+                <div class="rating">
+                  <img src="{{ url_for('static', filename='images/rating.png') }}"alt="error" class="headerimg" />
+                  <span style="font-size: x-large">4.2</span>
+                </div> 
+              </div>
+              <span>Nit road, patna University, Patna</span
+              ><span class="time">10min</span>
+              <p>Owner-Rajesh Kumar</p>
+              <p>Contact-9102563552</p>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/washerman1.jpg') }}" alt="error" class="card-img" />
+            </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Washman 2</h3>
+                 </div>
+                <div class="rating">
+                  <img src="{{ url_for('static', filename='images/rating.png') }}"  alt="error" class="headerimg" />
+                  <span style="font-size: x-large">4.2</span>
+                </div> 
+              </div>
+              <span>Nit road, patna University, Patna</span
+              ><span class="time">10min</span>
+              <p>Owner-Rajesh Kumar</p>
+              <p>Contact-9102563552</p>
+            </div>
+          </div>
+          <div class="card3">
+            <div class="card-image">
+              <img src="{{ url_for('static', filename='images/washerman1.jpg') }}" alt="error" class="card-img" />
+            </div>
+            <div class="content">
+              <div class="header">
+                <div class="vendorheader">
+                  <h3>Washman 3</h3>
+                  
+                </div>
+               <div class="rating">
+                 <img src="{{ url_for('static', filename='images/rating.png') }}"  alt="error" class="headerimg" />
+                 <span style="font-size: x-large">4.2</span>
+               </div> 
+             </div>
+             <span>Nit road, patna University, Patna</span
+             ><span class="time">10min</span>
+             <p>Owner-Rajesh Kumar</p>
+             <p>Contact-9102563552</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="prize">
+         <h1>View Price Rate</h1>
+         <div class="mycontainer">
+           <div class="container1">
+             <img src="{{ url_for('static', filename='images/washerman1.jpg') }}" alt="error" class="washimg" />
+             <div class="details">
+               <h1 class="washman">Washman 1</h1>
+               <div class="para">
+                 <p>Nit road, Patna University,Patna</p>
+                 <p>Owner-Rajesh Kumar</p>
+                 <p>Contact-9254674567</p>
+                 <p>Washerman ID-#1334</p>
+               </div>
+             </div>
+             
+           </div>
+           <div class="container2">
+             <h2>Price Rate</h2>
+             <div class="subcontainer2">
+               <div class="items">
+                 <ul>
+                   <li>Items</li>
+                   <li>Jeans</li>
+                   <li>shirts</li>
+                   <li>T-shirts</li>
+                   <li>School Uniform</li>
+                   <li>Coat</li>
+                   <li>Towels</li>
+                   <li>Miscellaneous</li>
+                 </ul>
+               </div>
+               <div class="cost">
+                 <ul>
+                   <li>Cost Per item(Rs)</li>
+                   <li>12</li>
+                   <li>10</li>
+                   <li>13</li>
+                   <li>18</li>
+                   <li>16</li>
+                   <li>89</li>
+                   <li>34</li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="prize">
+          
+        <div class="mycontainer">
+          <div class="container1">
+            <img src="{{ url_for('static', filename='images/washerman1.jpg') }}" alt="error" class="washimg" />
+            <div class="details">
+              <h1 class="washman">Washman 1</h1>
+              <div class="para">
+                <p>Nit road, Patna University,Patna</p>
+                <p>Owner-Rajesh Kumar</p>
+                <p>Contact-9254674567</p>
+                <p>Washerman ID-#1334</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="container2">
+            <h2>Price Rate</h2>
+            <div class="subcontainer2">
+              <div class="items">
+                <ul>
+                  <li>Items</li>
+                  <li>Jeans</li>
+                  <li>shirts</li>
+                  <li>T-shirts</li>
+                  <li>School Uniform</li>
+                  <li>Coat</li>
+                  <li>Towels</li>
+                  <li>Miscellaneous</li>
+                </ul>
+              </div>
+              <div class="cost">
+                <ul>
+                  <li>Cost Per item(Rs)</li>
+                  <li>12</li>
+                  <li>10</li>
+                  <li>13</li>
+                  <li>18</li>
+                  <li>16</li>
+                  <li>89</li>
+                  <li>34</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="foo" class="footer">
+      <div class="form">
+        <h2>Book</h2>
+        <p class="service">Get your laundary just by booking. we will serve you to your home</p>
+        <form class="yuvi">
+          <input type="text" placeholder="username" class="styler"><br><br>
+          <input type="text" placeholder="Mobile Number" class="styler"><br><br>
+          <input type="text" placeholder="Address" class="styler"><br><br>
+          <input type="text" placeholder="Service Requirement" class="styler"><br><br>
+          <input type="text" placeholder="Vendor Id" class="styler"><br><br>
+        </form>
+        <p></p>
+        <button type="button" class="book" onclick="newdoc2()">Book</button>
+      </div>
+      <div class="footerimage">
+        <img src="{{ url_for('static', filename='images/washermen.png') }}" alt="error" class="footimg">
+        <div class="footimagecontent">
+          <h2 class="yy">Door Facilities</h2>
+          <p class="yuvi2">Register items from the vendors of your local area, register nearby mess and much more</p>
+        </div>
+      </div>
+    </div>
+    <div id="cart"></div>
+    <div id="mess" class>
+      <div class="card1">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='images/washerman1.jpg') }}"  alt="error" class="card-img" />
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="vendorheader">
+              <h3>Washman 1</h3>
+             </div>
+            <div class="rating">
+              <img src="{{ url_for('static', filename='images/rating.png') }}"alt="error" class="headerimg" />
+              <span style="font-size: x-large">4.2</span>
+            </div> 
+          </div>
+          <span>Nit road, patna University, Patna</span
+          ><span class="time">10min</span>
+          <p>Owner-Rajesh Kumar</p>
+          <p>Contact-9102563552</p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='images/washerman1.jpg') }}"  alt="error" class="card-img" />
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="vendorheader">
+              <h3>Washman 1</h3>
+             </div>
+            <div class="rating">
+              <img src="{{ url_for('static', filename='images/rating.png') }}"alt="error" class="headerimg" />
+              <span style="font-size: x-large">4.2</span>
+            </div> 
+          </div>
+          <span>Nit road, patna University, Patna</span
+          ><span class="time">10min</span>
+          <p>Owner-Rajesh Kumar</p>
+          <p>Contact-9102563552</p>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='images/washerman1.jpg') }}"  alt="error" class="card-img" />
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="vendorheader">
+              <h3>Washman 1</h3>
+             </div>
+            <div class="rating">
+              <img src="{{ url_for('static', filename='images/rating.png') }}"alt="error" class="headerimg" />
+              <span style="font-size: x-large">4.2</span>
+            </div> 
+          </div>
+          <span>Nit road, patna University, Patna</span
+          ><span class="time">10min</span>
+          <p>Owner-Rajesh Kumar</p>
+          <p>Contact-9102563552</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <script src="script3.js"></script> 
+</body>
+</html>

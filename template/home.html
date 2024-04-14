@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://kit.fontawesome.com/4737fd11e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        // document.getElementById('SignUp').addEventListener('click', function() {
+//     // Open another HTML file (e.g., "anotherfile.html") in a new tab/window
+//     window.open('index2.html', '_blank');
+// });
+console.log("welcome to my website");
+function newdoc() {
+    
+    window.location.assign("/mainpage.html");
+  }
+    </script>
+    <style>
+        *{
+    margin:0px;
+    
+    padding:0px;
+    block-size: border-box;
+}
+body{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.header{
+    display: inline-block;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    
+list-style: none;
+
+}
+.navbar ul li a{
+    font-size:24px ;
+text-decoration: none;
+margin:6px;
+
+}
+.navbar ul li a:hover{
+  color:red;
+}
+
+.img1{
+    height:160px;
+}
+.img2{
+    height:160px;
+}
+.d-block{
+    height:200px;
+}
+.yellow{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2AFEF;
+}
+.heading{
+    line-height: 14px;
+    text-align: center;
+    margin-top: 35px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+/* .slider{
+    display: flex;
+    
+}
+.slide-container{
+    margin-right:-4px;
+    margin-top: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.slider-image{
+    display: flex;
+    width: 98vw;
+    animation: slide 10s alternate 0s iter direction fill-mode;
+} */
+
+.container2{
+    max-width:1170px;
+    
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+.col1 ul{
+    list-style: none;
+}
+.col1 ul li a{
+    text-decoration: none;
+    color:white;
+}
+.footer{
+    background-color:#24262b;
+    padding:70px 0;
+    margin-top: 4px;
+}
+.col1{
+    width: 21%;
+    padding:0 15px;
+}
+.fhead{
+    color:white;
+}
+.carousel slide{
+    animation: slide 2s alternate 0s infinite linear fill-mode;
+}
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.content-img{
+    width:50%;
+    
+}
+.content{
+    margin-top:40px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    flex-wrap: wrap;
+}
+.content1{
+    display: flex;
+    margin-bottom: 40px;
+}
+.contentinfo{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    padding:40px;
+}
+.messheading{
+    font-size: larger;
+    font-weight: 700;
+}
+.messpara{
+    font-size: larger;
+    margin-top: 20px;
+}
+.button{
+    margin-top: 30px;
+    width:150px;
+    background-color: rgb(216, 69, 15);
+    color:white;
+    height:35px;
+    border-radius: 35px;
+}
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+      <div class="top">
+        <div class="header">
+          <h1>LocalBizHub</h1>
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Notification</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="yellow">
+        <div class="yimg1">
+          <img src="{{ url_for('static', filename='images/man2.png') }}"alt="reload" class="img1" />
+        </div>
+        <div class="heading">
+          <h2>welcome to India's Best</h2>
+          <h2 class="store">online store</h2>
+        </div>
+        <div class="yimg2">
+          <img  src="{{ url_for('static', filename='images/man.png') }}" alt="reload" class="img2" />
+        </div>
+      </div>
+      <div class="box">
+        
+        
+      </div>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+            src="{{ url_for('static', filename='images/offerelectronics2.jpg') }}" 
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+            src="{{ url_for('static', filename='images/messfood1.jpeg') }}" 
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+            src="{{ url_for('static', filename='images/Vendor1.jpg') }}" 
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="content">
+        <div class="content1">
+          <img
+           src="{{ url_for('static', filename='images/messfood1.jpeg') }}" 
+            alt="messfood"
+            class="content-img"
+          />
+
+          <div class="contentinfo">
+            <h class="messheading">Mess</h>
+            <p class="messpara">
+              Tired eating of boring hostel food but still searching for
+              something healthy? Explore our mess facilities, book messes of
+              your own choice and get home-made taste in your hostel life
+            </p>
+            <button class="button" onclick="newdoc()">Book Now</button>
+          </div>
+        </div>
+        <div class="content1">
+         
+          
+
+          <div class="contentinfo">
+            <h class="messheading">vendors</h>
+            <p class="messpara">
+              Thinking for buying fruits and
+vegetables but have no time?
+
+Explore the local vendors in your area 
+
+and give them chance
+
+ to serve you.
+            </p>
+            <button class="button" onclick="newdoc()">Book Now</button>
+          </div>
+          <img
+          src="{{ url_for('static', filename='images/Vendor1.jpg') }}" 
+            alt="messfood"
+            class="content-img"
+          />
+        </div>
+        <div class="content1">
+            <img src="{{ url_for('static', filename='images/shops1.jpeg') }}" 
+            alt="messfood"
+            class="content-img"
+          />
+
+          <div class="contentinfo">
+            <h class="messheading">shops</h>
+            <p class="messpara">
+              Tired eating of boring hostel food but still searching for
+              something healthy? Explore our mess facilities, book messes of
+              your own choice and get home-made taste in your hostel life
+            </p>
+            <button class="button" onclick="newdoc()">Book Now</button>
+          </div>
+        </div>
+        <div class="content1">
+         
+          
+
+          <div class="contentinfo">
+            <h class="messheading">Laundary</h>
+            <p class="messpara">
+              Thinking for buying fruits and
+vegetables but have no time?
+
+Explore the local vendors in your area 
+
+and give them chance
+
+ to serve you.
+            </p>
+            <button class="button" onclick="newdoc()">Book Now</button>
+          </div>
+          <img
+          src="{{ url_for('static', filename='images/laundry1.jpeg') }}" 
+            alt="messfood"
+            class="content-img"
+          />
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="cotainer2">
+          <div class="row">
+            <div class="col1">
+              <ul>
+                <li><a href="#">About LOCAlBIZHUB</a></li>
+                <li><a href="#">Who We are</a></li>
+                <li><a href="#">work with us</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Report Fraud</a></li>
+                <li><a href="#">Press Kit</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">BizVerse</a></li>
+                <li><a href="#">LocalBizhub</a></li>
+                <li><a href="#">Serving India</a></li>
+                <li><a href="#">hyperpure</a></li>
+                <li><a href="#">Bizland</a></li>
+                <li><a href="#">partner with us</a></li>
+                <li><a href="#">Apps for you</a></li>
+                <li><a href="#">Learn more</a></li>
+              </ul>
+            </div>
+            <div class="col1">
+              <ul>
+                <li><a href="#">BIZVERSE</a></li>
+                <li><a href="#">LocalBiz</a></li>
+                <li><a href="#">BizHub</a></li>
+                <li><a href="#">Binkit</a></li>
+                <li><a href="#">BIZVERSE</a></li>
+                <li><a href="#">Feeding India</a></li>
+                <li><a href="#">hyperpure</a></li>
+                <li><a href="#">Bizland</a></li>
+              </ul>
+            </div>
+            <div class="col1">
+              <ul>
+                <li><a href="#">FOR FACILITIES</a></li>
+                <li><a href="#">partner with us</a></li>
+                <li><a href="#">Apps for you</a></li>
+              </ul>
+            </div>
+            <div class="col1">
+              <h4 class="fhead">Social links</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

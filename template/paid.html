@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .paynment {
+        animation: anim 2s 0s 0 infinite alternate forwards;
+      }
+      @keyframes anim {
+      }
+      .pages {
+        margin: auto;
+      }
+    </style>
+    <script>
+      function newdoc4() {
+        window.location.assign("home.html");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="pages">
+      <h1 class="paynment">Payment success</h2>
+      <p class="paragraph">Your order has been successfully Placed . Thanks!</p>
+      <button class="home" onclick="newdoc4()">Back to Home</button>
+    </div>
+  </body>
+</html>
