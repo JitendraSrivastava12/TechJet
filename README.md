@@ -18,11 +18,11 @@ This project is an e-commerce website built using Python, Django, Bootstrap, and
 2. Install the required dependencies:
 
 ## Description of the hack
-- Connecr local vendors to ecomerce market
+- Connect local vendors/small businessman to ecomerce market to help them to grow
 
 ## Tech stack used
-- # frontend :- Html , CSS , Jscript, Bootstrap
-- # Backend - Python :-Flask , My Sql
+- frontend :- Html , CSS , Jscript, Bootstrap
+-  Backend - Python :-Flask , My Sql
 
 ## Installation Dependies:-
 - Python
