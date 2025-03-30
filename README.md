@@ -1,4 +1,4 @@
-# LocalBizHub Website
+# LazyCart Website
 
 This project is an e-commerce website built using Python, Django, Bootstrap, and other technologies. It allows users to browse products, add items to their cart, and complete the checkout process.
 
