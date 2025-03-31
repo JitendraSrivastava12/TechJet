@@ -36,6 +36,3 @@ This project is an e-commerce website built using Python, Django, Bootstrap, and
 - `templates/`: HTML templates,css,jsript
 - `static/`: Static files ( imagess)
 
-## Link of the Overview Video
-https://youtu.be/IIByyQ1yXm8?si=04qLUZYOAtxpTIKx
-
